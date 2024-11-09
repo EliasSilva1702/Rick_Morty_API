@@ -19,17 +19,20 @@ export const Search = ({ setLocationId }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        ref={inputRef}
-        type="text"
-        placeholder="Search..."
-        className="border"
-        inputMode="numeric"
-      />
-      <button>Search</button>
-      {
-        error && <p style={{ color: "red" }}>{error}</p>
-      }
+      <div className="flex gap-2 mx-auto items-center justify-center">
+        <input
+          ref={inputRef}
+          type="text"
+          placeholder="Search..."
+          className="border border-slate-700 rounded-md px-2 py-1 text-green-700 font-semibold overflow-hidden"
+          inputMode="numeric"
+        />
+        <button className="border border-slate-700 px-3 py-1 rounded-md transition hover:bg-green-500">
+          Search
+        </button>
+      </div>
+      {error && <p className="text-red-700 my-4 mx-auto font-semibold text-base text-center">{error}</p>}
+
     </form>
   );
 };

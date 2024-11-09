@@ -1,7 +1,10 @@
-import React from 'react'
-
 export const Hero = () => {
   return (
-    <div className='w-screen h-52 bg-green-700' />
-  )
-}
+    <img 
+      src="../../public/imgRickMorty.png" 
+      alt="Rick and Morty Banner" 
+      className="w-full object-cover aspect-square"
+      style={{ maxHeight: "500px" }} 
+    />
+  );
+};

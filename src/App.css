@@ -1,0 +1,17 @@
+.background-gradient {
+    background: linear-gradient(to top right, #c9df02, #13a500);
+    background-size: 200% 200%; /* Permite que el gradiente se mueva */
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
