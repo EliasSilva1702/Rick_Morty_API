@@ -10,7 +10,7 @@ export const ResidentCard = ({ url }) => {
 
   return (
       <div className="w-fit mx-auto flex flex-col">
-        <section className="flex flex-col items-center gap-4 border-2 border-slate-700 p-4 rounded-lg h-full w-64">
+        <section className="flex flex-col items-center gap-4 border-2 border-slate-700 p-4 rounded-lg h-full w-64 shadow-lg">
           <p>{resident?.name}</p>
           <span
             className={`px-2 rounded-lg ${
@@ -28,7 +28,7 @@ export const ResidentCard = ({ url }) => {
             alt={resident?.name}
             className="w-64 h-64 rounded-lg object-cover"
           />
-          <p>{resident === 0 ? console.log("Resident is 0") : resident?.name}</p>
+          <p>{resident === 0 ? 'resident is 0' : ''}</p>
         </section>
     </div>
   );
